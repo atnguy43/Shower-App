@@ -52,7 +52,7 @@ I have been going through some other name ideas for this app but nothing seems t
 -------------------------------------------------------------------------
 
 09/25/2025
-v1.1.0
+v1.0.1
 
 New:
 
