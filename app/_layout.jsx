@@ -4,8 +4,11 @@ import { Colors } from "../constants/Colors"
 
 
 const RootLayout = () => { 
-    const colorScheme = useColorScheme() 
-    console.log(colorScheme)
+    const colorScheme = useColorScheme()
+    // Used for debugging Color Schemes 
+    // console.log(colorScheme)  
+
+    // defaults to light theme if colorScheme is null
     const theme = Colors[colorScheme] ?? Colors.light
 
     return (
