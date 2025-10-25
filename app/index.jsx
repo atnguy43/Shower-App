@@ -1,11 +1,20 @@
-import { StyleSheet, Text, View, Image } from "react-native"
+import { StyleSheet, useColorScheme, Text, View, Image } from "react-native"
 import { Link } from 'expo-router'
+import { Colors } from "../constants/Colors"
 
 {/* Comments */}
 /* import Item from '../assets/img/img_name'                'Item' is an object (e.g. Logo, TabIcon, etc)*/
 
 
 const Home = () => {
+    const colorScheme = useColorScheme()
+    // Used for debugging Color Schemes 
+    // console.log(colorScheme)  
+
+    // defaults to light theme if colorScheme is null
+    const theme = Colors[colorScheme] ?? Colors.light
+
+
     return (
         <View style={styles.container}>
             <Image source={{}} /> 
