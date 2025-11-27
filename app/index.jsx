@@ -6,9 +6,12 @@ import { Colors } from "../constants/Colors"
 /* import Item from '../assets/img/img_name'                'Item' is an object (e.g. Logo, TabIcon, etc)*/
 
 
+// themed components
+import ThemedView from '../components/ThemedView'
+
 const Home = () => {
     const colorScheme = useColorScheme()
-    // Used for debugging Color Schemes 
+    // Used for debugging Color Schemes
     // console.log(colorScheme)  
 
     // defaults to light theme if colorScheme is null
@@ -16,11 +19,19 @@ const Home = () => {
 
 
     return (
-        <View style={styles.container}>
+        <ThemedView style={styles.container}>
             <Image source={{}} /> 
-            <Text style={styles.title}>
-                Flo-State
-            </Text>
+            
+
+            <view>
+                <Text style={styles.title1}>
+                    unflo
+                </Text>
+                <Text style={styles.title2}>
+                    w
+                </Text>
+            </view>
+
             
             <Text style={{ marginTop: 10, marginBottom: 30}}>
                 Shower Optimizer App
@@ -36,15 +47,15 @@ const Home = () => {
 
 
             {/* Links on Home Page */}
-            <Link href="/startShower" style={styles.link} >Start Shower</Link>
-            <Link href="/routines" style={styles.link}>Routines</Link>
-            <Link href="/statistics" style={styles.link}>Statistics</Link>
-            <Link href="/appSettings" style={styles.link}>Settings</Link>
+            <Link href="startShower" style={styles.link} >Start Shower</Link>
+            <Link href="routines" style={styles.link}>Routines</Link>
+            <Link href="statistics" style={styles.link}>Statistics</Link>
+            <Link href="appSettings" style={styles.link}>Settings</Link>
 
             <Text style={styles.waterMark}> 
                 pengwinomix.com
             </Text>
-        </View>
+        </ThemedView>
     )
 }
 
@@ -56,13 +67,19 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'rgba(224, 242, 255, 1)'
+        backgroundColor: 'rgba(133, 231, 218, 1)'
     },
 
-    title: {
+    title1: {
         fontWeight: 'bold',
-        fontSize: 25,
+        fontSize: 50,
         marginBottom: 15
+    },
+    title2: {
+        fontWeight: 'bold',
+        fontSize: 50,
+        marginBottom: 15,
+        color: 'rgba(26, 140, 206, 1)'
     },
     
 
@@ -75,14 +92,14 @@ const styles = StyleSheet.create({
     
     
     link: {
-        marginVertical: 20,
         fontSize: 15,
         color: 'grey',
         borderBottomWidth: 1,
+        width: '33.33%',
         backgroundColor: 'rgba(103, 206, 224, 1)',
+        paddingBottom: 5,
         padding: 10,
         borderRadius: 5,
-        boxShadow: '4px 4px rgba(95, 149, 185, 1)'
     },
 
     waterMark: {
