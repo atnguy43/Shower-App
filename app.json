@@ -1,9 +1,9 @@
 {
   "expo": {
     "scheme": "showerapp",
-    "name": "H2flo",
-    "slug": "H2flo",
-    "version": "1.0.0",
+    "name": "unflow", 
+    "slug": "unflow",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
